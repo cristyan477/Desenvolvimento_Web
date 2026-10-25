@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo" >Testes Imagens:</h1>
+    <h2>Ajuste de Imagem I</h2>
+    <img src="imgs/img_girl.jpg" alt="garota-frio" 
+    style="width:500px;height:600px;">
+
+<br>
+
+ <h2>Ajuste de Imagem II</h2>
+  <p >imagem 100%</p>
+  <img id="imghtml" src="imgs/html5.gif" alt="html5"
+  width="128" height="128">
+
+<br>
+
+<p>imagem normal</p>
+  <img src="imgs/html5.gif" alt="html5" 
+  style="width:128px;height:128px;">
+
+
+<h2>Imagem de um outro site</h2>
+
+<img src="https://www.w3schools.com/images/w3schools_green.jpg"
+ alt="W3Schools.com" style="width:104px;height:142px;">
+
+<br>
+
+ <h2>GIF</h2>
+
+<img src=" imgs/programming.gif" alt="Computer man" 
+style="width:48px;height:48px;">
+
+<br>
+
+<h2>Imagem ou texto em forma de link</h2>
+
+<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_link">
+<img src="imgs/smiley.gif" alt="HTMLlink" style="width:42px;height:42px;">
+<p>clique aqui ou no emote</p>
+</a>
+
+<br>
+
+<h2>Imagens Flutuantes</h2>
+<p><strong>Lado Direito:</strong></p>
+
+<p>
+<img src="imgs/smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+</p>
+
+<br>
+
+<p><strong>Lado Esquerdo:</strong></p>
+
+<p>
+<img src="imgs/smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+</p>
+
+<br>
+
+<h2>Mapeamento de imagens</h2>
+
+<P>EXEMPLO I:</P>
+
+<img src="imgs/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+<br>
+
+<P>EXEMPLO II:</P>
+
+<img src="imgs/frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675">
+
+<map name="foodmap">
+  <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,
+  322,40,259,103,161,128,147" alt="Croissant" href="croissant.htm">
+</map>
+
+<br>
+
+<h2>Imagem de Fundo</h2>
+
+<br>
+
+<p id="imgfundogirl">You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+is specified for a div element.<br>
+By default, the background-image<br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. Try resizing the<br>
+browser window to see how the<br>
+background image behaves</p>
+
+<br>
+
+<h2>Caso queira q a pagina toda tenha a imagem de forma repetida(No CSS):</h2>
+<p>
+body{
+    background-image: url('imgs/img_girl.jpg');
+}
+
+</p>
+
+<br>
+
+<h2>E para nao repetir (No CSS)</h2>
+
+<p>
+    body {
+  background-image: url('example_img_girl.jpg');
+  background-repeat: no-repeat;
+}
+</p>
+
+<br>
+
+<h2>Caso queira a Imagem 100% na tela(NO CSS)</h2>
+<p>
+    body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</p>
+
+<br>
+
+<h2>Adaptação de Imagem nas resoluções</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="imgs/frenchfood.jpg">
+  <source media="(min-width: 465px)" srcset="imgs/workplace.jpg">
+  <img src="imgs/img_girl.jpg" style="width:auto;">
+</picture>
+
+<p>coloque em diferentes formatos de tela para a imagem mudar</p>
+
+<br>
+
+<h1 class="titulo">Classe em JavaScript:</h2>
+
+<p>Clique no botão abaixo:</p>
+
+<button onclick="myFunction()">BOTÃO</button>
+
+<h2 class="city">São Paulo</h2>
+<p>Cidade Mais Populosa do Brasil.</p>
+
+<h2 class="city">Bahia</h2>
+<p>Primeira CApital do Brasil.</p>
+
+<h2 class="city">Brasilia</h2>
+<p>Atual Capital do Brasil.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+<br>
+
+<h1 class="titulo">Id com Links e Javascript:</h1>
+
+<p><a href="#C4">Pular pro capitulo 4</a></p>
+<p><a href="#C10">Pular pro capitulo 10</a></p>
+
+<h2>Capitulo 1</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 2</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 3</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2 id="C4">Capitulo 4</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 5</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 6</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 7</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 8</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 9</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2 id="C10">Capitulo 10</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<br>
+
+<p>Clique no botão pra iniciar interação</p>
+
+<h1 id="myHeader">Good night!</h1>
+<button onclick="displayResult()">Dying light</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Good luck!";
+}
+</script>
+
+
+
+</body>
+</html>

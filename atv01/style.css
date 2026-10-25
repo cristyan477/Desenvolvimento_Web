@@ -1,0 +1,17 @@
+body{
+    margin: 1; 
+    
+}
+
+#imghtml{
+    width: 100%;
+}
+
+#imgfundogirl{
+      background-image: url('imgs/img_girl.jpg');
+}
+
+.titulo{
+    text-align: center;
+    background-color: rgb(223, 124, 124);
+}
