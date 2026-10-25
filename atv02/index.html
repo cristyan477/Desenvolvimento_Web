@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo" >Testes Imagens:</h1>
+    <h2>Ajuste de Imagem I</h2>
+    <img src="imgs/img_girl.jpg" alt="garota-frio" 
+    style="width:500px;height:600px;">
+
+<br>
+
+ <h2>Ajuste de Imagem II</h2>
+  <p >imagem 100%</p>
+  <img id="imghtml" src="imgs/html5.gif" alt="html5"
+  width="128" height="128">
+
+<br>
+
+<p>imagem normal</p>
+  <img src="imgs/html5.gif" alt="html5" 
+  style="width:128px;height:128px;">
+
+
+<h2>Imagem de um outro site</h2>
+
+<img src="https://www.w3schools.com/images/w3schools_green.jpg"
+ alt="W3Schools.com" style="width:104px;height:142px;">
+
+<br>
+
+ <h2>GIF</h2>
+
+<img src="imgs/programming.gif" alt="Computer man" 
+style="width:48px;height:48px;">
+
+<br>
+
+<h2>Imagem ou texto em forma de link</h2>
+
+<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_link">
+<img src="imgs/smiley.gif" alt="HTMLlink" style="width:42px;height:42px;">
+<p>clique aqui ou no emote</p>
+</a>
+
+<br>
+
+<h2>Imagens Flutuantes</h2>
+<p><strong>Lado Direito:</strong></p>
+
+<p>
+<img src="imgs/smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+</p>
+
+<br>
+
+<p><strong>Lado Esquerdo:</strong></p>
+
+<p>
+<img src="imgs/smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+</p>
+
+<br>
+
+<h2>Mapeamento de imagens</h2>
+
+<P>EXEMPLO I:</P>
+
+<img src="imgs/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+<br>
+
+<P>EXEMPLO II:</P>
+
+<img src="imgs/frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675">
+
+<map name="foodmap">
+  <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,
+  322,40,259,103,161,128,147" alt="Croissant" href="croissant.htm">
+</map>
+
+<br>
+
+<h2>Imagem de Fundo</h2>
+
+<br>
+
+<p id="imgfundogirl">You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+is specified for a div element.<br>
+By default, the background-image<br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. Try resizing the<br>
+browser window to see how the<br>
+background image behaves</p>
+
+<br>
+
+<h2>Caso queira q a pagina toda tenha a imagem de forma repetida(No CSS):</h2>
+<p>
+body{
+    background-image: url('imgs/img_girl.jpg');
+}
+
+</p>
+
+<br>
+
+<h2>E para nao repetir (No CSS)</h2>
+
+<p>
+    body {
+  background-image: url('example_img_girl.jpg');
+  background-repeat: no-repeat;
+}
+</p>
+
+<br>
+
+<h2>Caso queira a Imagem 100% na tela(NO CSS)</h2>
+<p>
+    body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</p>
+
+<br>
+
+<h2>Adaptação de Imagem nas resoluções</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="imgs/frenchfood.jpg">
+  <source media="(min-width: 465px)" srcset="imgs/workplace.jpg">
+  <img src="imgs/img_girl.jpg" style="width:auto;">
+</picture>
+
+<p>coloque em diferentes formatos de tela para a imagem mudar</p>
+
+<br>
+
+<h1 class="titulo">Classe em JavaScript:</h1>
+
+<p>Clique no botão abaixo:</p>
+
+<button onclick="myFunction()">BOTÃO</button>
+
+<h2 class="city">São Paulo</h2>
+<p>Cidade Mais Populosa do Brasil.</p>
+
+<h2 class="city">Bahia</h2>
+<p>Primeira CApital do Brasil.</p>
+
+<h2 class="city">Brasilia</h2>
+<p>Atual Capital do Brasil.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+<br>
+
+<h1 class="titulo">Id com Links e Javascript:</h1>
+
+<p><a href="#C4">Pular pro capitulo 4</a></p>
+<p><a href="#C10">Pular pro capitulo 10</a></p>
+
+<h2>Capitulo 1</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 2</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 3</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2 id="C4">Capitulo 4</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 5</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 6</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 7</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 8</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2>Capitulo 9</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<h2 id="C10">Capitulo 10</h2>
+<p>Esse capitulo diz ba bla bla</p>
+
+<br>
+
+<p>Clique no botão pra iniciar interação</p>
+
+<h1 id="myHeader">Good night!</h1>
+<button onclick="displayResult()">Dying light</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Good luck!";
+}
+</script>
+
+
+
+<br>
+
+<h1 class="titulo" id="indice-novo">Novos conteúdos</h1>
+<p>
+<a href="#tabelas">Tabelas</a> |
+<a href="#classes-id">Classes com Id</a> |
+<a href="#layouts">Layouts</a> |
+<a href="#listas">Listas</a> |
+<a href="#block-inline">Block e Inline</a>
+</p>
+
+<!-- ===================== TABELAS ===================== -->
+<h1 class="titulo" id="tabelas">Tabelas:</h1>
+
+<h2>Tabela simples</h2>
+<table class="tabela">
+  <tr>
+    <th>Nome</th>
+    <th>Curso</th>
+    <th>Nota</th>
+  </tr>
+  <tr>
+    <td>Cristyan</td>
+    <td>Sistemas de Informação</td>
+    <td>9,0</td>
+  </tr>
+  <tr>
+    <td>Ycaro</td>
+    <td>Sistemas de Informação</td>
+    <td>8,5</td>
+  </tr>
+</table>
+
+<br>
+
+<h2>Tabela com legenda (caption) e linhas zebradas</h2>
+<table class="tabela zebra">
+  <caption>Notas do semestre</caption>
+  <tr>
+    <th>Disciplina</th>
+    <th>Prova 1</th>
+    <th>Prova 2</th>
+    <th>Média</th>
+  </tr>
+  <tr>
+    <td>Programação Web</td>
+    <td>8,0</td>
+    <td>9,0</td>
+    <td>8,5</td>
+  </tr>
+  <tr>
+    <td>Banco de Dados</td>
+    <td>7,5</td>
+    <td>8,0</td>
+    <td>7,8</td>
+  </tr>
+  <tr>
+    <td>Algoritmos</td>
+    <td>9,5</td>
+    <td>9,0</td>
+    <td>9,3</td>
+  </tr>
+  <tr>
+    <td>Redes</td>
+    <td>6,5</td>
+    <td>7,0</td>
+    <td>6,8</td>
+  </tr>
+</table>
+
+<br>
+
+<h2>Colspan e Rowspan (mesclar células)</h2>
+<table class="tabela">
+  <tr>
+    <th colspan="2">Colspan: 2 colunas juntas</th>
+    <th rowspan="2">Rowspan: 2 linhas juntas</th>
+  </tr>
+  <tr>
+    <td>Célula A</td>
+    <td>Célula B</td>
+  </tr>
+  <tr>
+    <td>Célula C</td>
+    <td>Célula D</td>
+    <td>Célula E</td>
+  </tr>
+</table>
+
+<br>
+
+<h2>Tabela com cabeçalho, corpo e rodapé (thead, tbody, tfoot)</h2>
+<table class="tabela">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Preço</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Café</td>
+      <td>R$ 5,00</td>
+    </tr>
+    <tr>
+      <td>Croissant</td>
+      <td>R$ 8,00</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>R$ 13,00</td>
+    </tr>
+  </tfoot>
+</table>
+
+<br>
+
+<!-- ===================== CLASSES COM ID ===================== -->
+<h1 class="titulo" id="classes-id">Classes com Id:</h1>
+
+<p><strong>Class</strong> pode ser usada em vários elementos. <strong>Id</strong> é único: só pode existir um elemento com aquele id na página.</p>
+
+<h2>Mesma classe em vários elementos</h2>
+<p class="aviso">Aviso 1 - usa a classe "aviso".</p>
+<p class="aviso">Aviso 2 - usa a mesma classe "aviso".</p>
+<div class="aviso">Aviso 3 - até uma div pode usar a classe "aviso".</div>
+
+<h2>Mais de uma classe no mesmo elemento</h2>
+<p class="aviso destaque">Este parágrafo tem duas classes: "aviso" e "destaque".</p>
+
+<h2>Class + Id juntos</h2>
+<p class="aviso" id="aviso-principal">Este tem a classe "aviso" e também o id exclusivo "aviso-principal".</p>
+<button onclick="mudarAviso()">Mudar o aviso pelo Id</button>
+<button onclick="pintarAvisos()">Pintar todos pela Classe</button>
+
+<p>Link para o id: <a href="#aviso-principal">ir para o aviso principal</a></p>
+
+<script>
+function mudarAviso() {
+  var el = document.getElementById("aviso-principal");
+  el.innerHTML = "O id encontrou só este elemento!";
+  el.style.backgroundColor = "lightgreen";
+}
+
+function pintarAvisos() {
+  var lista = document.getElementsByClassName("aviso");
+  for (var i = 0; i < lista.length; i++) {
+    lista[i].style.backgroundColor = "lightblue";
+  }
+}
+</script>
+
+<br>
+
+<!-- ===================== LAYOUTS ===================== -->
+<h1 class="titulo" id="layouts">Layouts:</h1>
+
+<p>Elementos semânticos: header, nav, section, article, aside e footer.</p>
+
+<h2>Layout com Flexbox (redimensione a janela)</h2>
+<div class="layout">
+  <header class="layout-header">
+    <h3>Header (cabeçalho)</h3>
+  </header>
+
+  <nav class="layout-nav">
+    <a href="#layouts">Início</a>
+    <a href="#tabelas">Tabelas</a>
+    <a href="#listas">Listas</a>
+    <a href="#block-inline">Block e Inline</a>
+  </nav>
+
+  <div class="layout-colunas">
+    <section class="layout-main">
+      <article>
+        <h3>Article 1</h3>
+        <p>Conteúdo principal da página. Um article é um conteúdo independente.</p>
+      </article>
+      <article>
+        <h3>Article 2</h3>
+        <p>Outro conteúdo dentro da mesma section.</p>
+      </article>
+    </section>
+
+    <aside class="layout-aside">
+      <h3>Aside</h3>
+      <p>Conteúdo lateral: links, anúncios, informações extras.</p>
+    </aside>
+  </div>
+
+  <footer class="layout-footer">
+    <p>Footer (rodapé)</p>
+  </footer>
+</div>
+
+<br>
+
+<h2>Layout em 3 colunas com Grid</h2>
+<div class="grid-3">
+  <div>Coluna 1</div>
+  <div>Coluna 2</div>
+  <div>Coluna 3</div>
+</div>
+
+<br>
+
+<!-- ===================== LISTAS ===================== -->
+<h1 class="titulo" id="listas">Listas:</h1>
+
+<h2>Lista não ordenada (ul)</h2>
+<ul>
+  <li>Café</li>
+  <li>Chá</li>
+  <li>Leite</li>
+</ul>
+
+<h2>Estilos de marcador (list-style-type)</h2>
+<ul style="list-style-type:disc;">
+  <li>disc (padrão)</li>
+</ul>
+<ul style="list-style-type:circle;">
+  <li>circle</li>
+</ul>
+<ul style="list-style-type:square;">
+  <li>square</li>
+</ul>
+<ul style="list-style-type:none;">
+  <li>none (sem marcador)</li>
+</ul>
+
+<h2>Lista ordenada (ol)</h2>
+<ol>
+  <li>Primeiro</li>
+  <li>Segundo</li>
+  <li>Terceiro</li>
+</ol>
+
+<h2>Tipos de numeração (type)</h2>
+<ol type="1"><li>Números (type="1")</li></ol>
+<ol type="A"><li>Letras maiúsculas (type="A")</li></ol>
+<ol type="a"><li>Letras minúsculas (type="a")</li></ol>
+<ol type="I"><li>Romanos maiúsculos (type="I")</li></ol>
+<ol type="i"><li>Romanos minúsculos (type="i")</li></ol>
+
+<h2>Começando em outro número (start) e ordem inversa (reversed)</h2>
+<ol start="50">
+  <li>Começa no 50</li>
+  <li>Continua no 51</li>
+</ol>
+
+<ol reversed>
+  <li>Contagem</li>
+  <li>em ordem</li>
+  <li>inversa</li>
+</ol>
+
+<h2>Lista de descrição (dl, dt, dd)</h2>
+<dl>
+  <dt>HTML</dt>
+  <dd>Linguagem de marcação para estruturar páginas</dd>
+  <dt>CSS</dt>
+  <dd>Linguagem para estilizar páginas</dd>
+  <dt>JavaScript</dt>
+  <dd>Linguagem para dar interatividade</dd>
+</dl>
+
+<h2>Listas aninhadas</h2>
+<ul>
+  <li>Front-end
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </li>
+  <li>Back-end
+    <ol>
+      <li>Java</li>
+      <li>MySQL</li>
+    </ol>
+  </li>
+</ul>
+
+<h2>Lista horizontal (menu com CSS)</h2>
+<ul class="menu-horizontal">
+  <li><a href="#tabelas">Tabelas</a></li>
+  <li><a href="#classes-id">Classes com Id</a></li>
+  <li><a href="#layouts">Layouts</a></li>
+  <li><a href="#listas">Listas</a></li>
+  <li><a href="#block-inline">Block e Inline</a></li>
+</ul>
+
+<br>
+
+<!-- ===================== BLOCK E INLINE ===================== -->
+<h1 class="titulo" id="block-inline">Block e Inline:</h1>
+
+<p><strong>Block</strong> começa em uma nova linha e ocupa toda a largura (ex.: div, p, h1-h6, ul, table). <strong>Inline</strong> não quebra a linha e ocupa só o necessário (ex.: span, a, img, strong, em).</p>
+
+<h2>Elementos block (div)</h2>
+<div class="bloco">Div 1 - ocupa a linha toda</div>
+<div class="bloco">Div 2 - começa em uma nova linha</div>
+
+<h2>Elementos inline (span)</h2>
+<p>
+Este texto tem um <span class="linha">span inline</span>, outro
+<span class="linha">span inline</span> e um
+<a href="#block-inline">link inline</a>, todos na mesma linha.
+</p>
+
+<h2>Mudando o display</h2>
+<p><strong>Span como block (display:block):</strong></p>
+<span class="linha" style="display:block;">Span 1</span>
+<span class="linha" style="display:block;">Span 2</span>
+
+<p><strong>Div como inline (display:inline):</strong></p>
+<div class="bloco" style="display:inline;">Div 1</div>
+<div class="bloco" style="display:inline;">Div 2</div>
+
+<p><strong>inline-block (fica na linha, mas aceita largura e altura):</strong></p>
+<span class="caixa-ib">Caixa 1</span>
+<span class="caixa-ib">Caixa 2</span>
+<span class="caixa-ib">Caixa 3</span>
+
+<p><strong>display:none (esconde) x visibility:hidden (esconde mas mantém o espaço):</strong></p>
+<p>Antes <span style="display:none;">[display none]</span> depois</p>
+<p>Antes <span style="visibility:hidden;">[visibility hidden]</span> depois</p>
+
+<p><strong>Lista com itens inline:</strong></p>
+<ul>
+  <li style="display:inline;">Item 1</li>
+  <li style="display:inline;">Item 2</li>
+  <li style="display:inline;">Item 3</li>
+</ul>
+
+<br>
+
+
+</body>
+</html>
