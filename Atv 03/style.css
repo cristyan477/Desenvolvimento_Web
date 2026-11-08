@@ -1,0 +1,273 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #222;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.topo {
+  background-color: #f778e1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main.conteudo {
+  padding: 20px;
+}
+
+.voltar {
+  color: white;
+}
+
+a {
+  color: #f778e1;
+}
+
+.menu a {
+  display: block;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #222;
+}
+
+.menu a:hover {
+  background-color: #e6ebff;
+}
+
+.menu strong {
+  display: block;
+  color: #f778e1;
+}
+
+/* Exercícios */
+.exercicio {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.demo {
+  border: 1px dashed #999;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+pre {
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.rotulo {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Formulário */
+.form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form input[type=text],
+.form input[type=email],
+.form input[type=password],
+.form input[type=date],
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.form fieldset {
+  margin-top: 10px;
+}
+
+.form .opcao label {
+  display: inline;
+}
+
+.form button {
+  margin-top: 15px;
+  padding: 6px 14px;
+}
+
+.caixa {
+  background-color: #f778e1;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.alta {
+  padding: 30px 10px;
+}
+
+.g1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.g2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.g3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.g3 .largo {
+  grid-column: 1 / span 2;
+}
+
+.g3 .alto {
+  grid-row: 1 / span 2;
+  grid-column: 4;
+}
+
+.g4 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "topo topo" "lateral principal" "rodape rodape";
+}
+
+.g4 .a-topo {
+  grid-area: topo;
+}
+
+.g4 .a-lateral {
+  grid-area: lateral;
+}
+
+.g4 .a-principal {
+  grid-area: principal;
+}
+
+.g4 .a-rodape {
+  grid-area: rodape;
+}
+
+.g5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.f {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.f .caixa {
+  min-width: 70px;
+}
+
+.dir-linha {
+  flex-direction: row;
+}
+
+.dir-coluna {
+  flex-direction: column;
+}
+
+.dir-linha-rev {
+  flex-direction: row-reverse;
+}
+
+.jc-inicio {
+  justify-content: flex-start;
+}
+
+.jc-centro {
+  justify-content: center;
+}
+
+.jc-fim {
+  justify-content: flex-end;
+}
+
+.jc-entre {
+  justify-content: space-between;
+}
+
+.jc-ao-redor {
+  justify-content: space-around;
+}
+
+.jc-igual {
+  justify-content: space-evenly;
+}
+
+.al {
+  height: 150px;
+}
+
+.al-inicio {
+  align-items: flex-start;
+}
+
+.al-centro {
+  align-items: center;
+}
+
+.al-fim {
+  align-items: flex-end;
+}
+
+.al-estica {
+  align-items: stretch;
+}
+
+.quebra {
+  flex-wrap: wrap;
+}
+
+.quebra .caixa {
+  flex: 0 0 160px;
+}
+
+.cresce .caixa {
+  flex: 1;
+}
+
+.cresce .caixa.dobro {
+  flex: 2;
+}
+
+.centralizado {
+  height: 180px;
+  justify-content: center;
+  align-items: center;
+}
+
+.termos {
+  margin-top: 15px;
+}
